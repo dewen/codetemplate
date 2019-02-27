@@ -8,3 +8,5 @@ echo 'REPLACED: '
 cat ${TMP_FILE}
 rm ${TMP_FILE}
 
+# Find and replace all occurrence of string "Project Apple" from files found
+find . -type f -name '*.md' -exec sed -i '' 's/Project Apple/Project Orange/' {} \; -print
